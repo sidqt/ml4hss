@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>ML for High-Schoolers</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- ************ FULL PAGE ************** -->
+    <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100" rel="stylesheet">
+    <script type="text/javascript" src="fullpage/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        var mainColor = '#33FF99',
+            headerColor = '#99FFCC',
+            contentColor = '#CCFFE5',
+            contentColor1 = '#CCFFFF';
+
+      $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: 
+                            ['title', 
+                            'data_science', 
+                            'ml', 
+                            'ml_types', 
+                            'classification', 
+                            'example_class_1_1', 
+                            'example_class_1_2', 
+                            'regression', 
+                            'example_reg_1', 
+                            'resources', 
+                            'about'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: 
+                            ['Start', 
+                            'Data Science', 
+                            'Machine Learning', 
+                            'Types of problems', 
+                            'Classification ',
+                            'Rain / No Rain Intro', 
+                            'Rain / No Rain Charts', 
+                            'Regression', 
+                            'Temperature Prediction', 
+                            'Additional Resources', 
+                            'About']
+            });
+
+        });
+    </script>   
+
+
+    <!-- ************ Classification Example 2 ************** -->
+    <link rel="stylesheet" type="text/css" href="https://dc-js.github.io/dc.js/css/dc.css"/>
+    <link rel="stylesheet" type="text/css" href="classification/rain_no_rain.css" />
+    <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/d3.js"></script>
+    <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+    <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+
+    <!-- ************ Regression Example 1 ************** -->
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"> 
+
+    <!-- ************ Regression Example 2 ************** -->
+
+    <!-- ************ EXPLORATION ************** -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>    
+    <script src="https://unpkg.com/topojson@3"></script>
+
+    </head>
+<body>
+    <body>
+
+    <div class="background" id="fullpage">
+   
+        <div class="section" id="section0">
+
+
+                <div class="header" id="main-title">
+
+                
+                    <h1>Machine Learning</h1>
+                    <h1>For High School Students</h1>
+                    </div>
+                </div>
+
+        <div class="section" id="section1">
+
+            <div class="content">
+                <h1>What is Data Science?</h1>
+                <p>Data science, in its most basic terms, can be defined as obtaining insights and information, really anything of value, out of data. Like any new field, it's often tempting but counterproductive to try to put concrete bounds on its definition. This is data science. This is not. In reality, data science is evolving so fast and has already shown such enormous range of possibility that a wider definition is essential to understanding it.</p>
+                <p>And while it's hard to pin down a specific definition, it's quite easy to see and feel its impact. Data science, when applied to different fields can lead to incredible new insights. And the folks that are using it are already reaping the benefits</p>
+                <br/><br/><br/><br/>
+                <h3>It’s hard to imagine a world before data.</h3>
+            </div>
+            </div>
+
+        <div class="section" id="section2">
+    
+            <div class="content">
+                <h1>What is Machine Learning?</h1>
+                <p>Machine learning (or just ML) is probably the most hyped part of data science.</p>
+                <p>Data scientists define machine learning as the process of using machines (aka a computer) to better understand a process or system, and recreate, replicate or augment that system. In some cases, machines process data in order to develop some kind of understanding of the underlying system that generated it. In others, machines process data and develop new systems for understanding it. These methods are often based around that fancy buzzword “algorithms” we hear so much when folks talk about Google or Amazon.</p>
+                <p>An algorithm is basically a collection of instructions for a computer to accomplish some specific task — it's commonly compared to a recipe. You can build a lot of different things with algorithms, and they'll all be able to accomplish slightly different tasks.</p>
+                <br/><br/><br/><br/>
+                <p>In technical terms, the most common divisions are Supervised, Unsupervised, and Reinforcement Learning.</p>
+            </div>
+            </div>
+
+        <div class="section" id="section3">
+    
+            <div class="content">
+                <h1>Types of Machine Learning and their Types</h1>
+                <p>ML is the process of training a piece of software, called a model, to make useful predictions using a data set. This predictive model can then serve up predictions about previously unseen data. We use these predictions to take action in a product; for example, the system predicts that a user will like a certain video, so the system recommends that video to the user.</p>
+                <h3>Supervised Learning</h3>
+                <p>Supervised learning is a type of ML where the model is provided with labeled training data. But what does that mean?</p>
+                <p>For example, suppose you are an amateur botanist determined to differentiate between two species of the Lilliputian plant genus (a completely made-up plant). The two species look pretty similar. Fortunately, a botanist has put together a data set of Lilliputian plants she found in the wild along with their species name.</p>
+                <p>The training data includes both Inputs and Labels(Targets)</p>
+                <p>All the Supervised Learning problems can be put under either of the categories:</p>
+                <p><b>Classification</b></p>
+                <p><b>Regression</b></p>
+                <br/><br/>
+                <h3>Unsupervised Learning</h3>
+                <p>In unsupervised learning, the goal is to identify meaningful patterns in the data. To accomplish this, the machine must learn from an unlabeled data set. In other words, the model has no hints how to categorize each piece of data and must infer its own rules for doing so.</p>
+                <p>Popular types of Unsupervised Learning problems</p>
+                <p><b>Clustering</b></p>
+                <p><b>Anomaly Detection</b></p>
+                <br/><br/>
+                <h3>Reinforced Learning</h3>
+                <p>An additional branch of machine learning is reinforcement learning (RL). Reinforcement learning differs from other types of machine learning. In RL you don't collect examples with labels. Imagine you want to teach a machine to play a very basic video game and never lose. You set up the model (often called an agent in RL) with the game, and you tell the model not to get a "game over" screen. During training, the agent receives a reward when it performs this task, which is called a reward function. With reinforcement learning, the agent can learn very quickly how to outperform humans.</p>
+                <br/><br/>
+                <p>In this tutorial we will explore types of Supervised Learning Problems <b>VISUALLY</b></p>
+            </div>
+            </div>
+
+        <div class="section" id="section4">
+
+            <div class="content">
+                <h1>Classification Problems</h1>
+                <p>This is a type of problem where we predict the categorical response value where the data can be separated into specific “classes” (ex: we predict one of the values in a set of values).</p>
+            </div>
+            </div>
+
+        <div class="section" id="section5">
+
+            <div class="content">
+                    <h1>Rain or No Rain</h1>
+                    <p>Here we will predict for a set of occurances whether will it rain or not</p>
+                    <div id="class_rain_bubble"></div>
+                    <script src="classification/rain_no_rain_bubble_chart.js"></script>
+            </div>
+            </div>
+
+        <div class="section" id="section6">
+
+            <div class="content">
+                
+                
+                    <div class="col-lg-26">
+                      <div class="well">
+                        <h1>Rain or No Rain</h1>
+                        <p>Here we will predict for a set of occurances whether will it rain or not</p>
+                      </div>
+                      <div cless="row">
+                            <div class="col-lg-4"><button id="original">Original Data</button></div>
+                            <div class="col-lg-4"><button id="feature_normalization">Normalization</button></div>
+                            <div class="col-lg-4"><button id="predict">Predict</button></div>
+                      </div>
+                      <div class="row">
+
+                        <div class="col-md-4">
+                          <div class = "graph" id="class_rain_temp"></div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class = "graph" id="class_rain_humidity"></div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class = "graph" id="class_rain_rainfall"></div>
+                        </div>
+                      </div>
+                            <div class="row">
+
+                        <div class="col-md-4">
+                          <div class = "graph" id="class_rain_temp_mini"></div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class = "graph" id="class_rain_humidity_mini"></div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class = "graph" id="class_rain_rainfall_mini"></div>
+                        </div>
+                      </div>
+
+                       <div class="row">
+                        <h3>   Legends</h3>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                            <div id="class_rain_temp_legend"></div>         
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="class_rain_humidity_legend"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="class_rain_outcomes_legend"></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-26">
+                          <div class="well">
+                            <div class = "graph" id="class_rain_outcomes"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                                <script src="classification/rain_no_rain.js"></script>
+            </div>
+            </div>
+
+        <div class="section" id="section7">
+
+            <div class="content">
+                <h1>Regression Problem</h1>
+                <p>This is a type of problem where we need to predict the continuous-response value (ex : above we predict number which can vary from -infinity to +infinity)</p>
+            </div>
+            </div>
+
+        <div class="section" id="section8">
+
+            <div class="content">
+               
+                
+                    <div class="col-lg-26">
+                            <div class="well">
+                        <h1>Temperature Prediction</h1>
+                        <p>Here we will predict the tempurature trend</p>
+                      </div>
+                      <div class="container_fluid">
+                      <div class="row">
+                            <div class="col-lg-4"><button id="reg_original">Original Data</button></div>
+                            <div class="col-lg-4"><button id="reg_feature_normalization">Normalization</button></div>
+                            <div class="col-lg-4"><button id="reg_predict">Predict</button> </div>
+                      </div>
+                      <div class="row">
+
+                        <div class="col-lg-6">
+                          <div class = "graph" id="reg_temp"></div>
+                        </div>
+                        <!--
+                        <div class="col-md-4">
+                          <div class = "graph" id="reg_humidity"></div>
+                        </div>
+                        -->
+                        <div class="col-lg-6">
+                          <div class = "graph" id="reg_temp_prediction"></div>
+                        </div>
+                      </div>
+                            <div class="row">
+
+                        <div class="col-lg-6">
+                          <div class = "graph" id="reg_temp_mini"></div>
+                        </div>
+                        <!--
+                        <div class="col-md-4">
+                          <div class = "graph" id="reg_humidity_mini"></div>
+                        </div>
+                        -->
+
+                        <div class="col-lg-6">
+                          <div class = "graph" id="reg_pred_temp_mini"></div>
+                        </div>
+                      </div>
+
+                       <div class="row">
+                        <h3>   Legends</h3>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <div id="reg_temp_legend"></div>         
+                        </div>
+                        <!--
+                        <div class="col-lg-4">
+                            <div id="reg_humidity_legend"></div>
+                        </div>
+                        -->
+                        <div class="col-lg-6">
+                            <div id="reg_prediction_legend"></div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                    <script src="regression/temperature.js"></script>
+            </div>
+            </div>  
+
+        <div class="section" id="section9">
+
+            <div class="content">
+                <h1>Additional Resources</h1>
+                <p>Machine Learning is vast area, but you can kickstart your Machine Learning game by using the following links</p>
+                <br/>
+                <div class="col-md-10" id="container">
+                    <div class="col-md-4" id="panel">
+
+        
+                        
+                    </div>
+                    <div class="col-md-4" id="legend"></div>
+                    <div class="col-md-8" id="map"></div>
+                    <div class="col-md-10 col-md-offset-4" id="slider-histogram"></div>
+                    <div class="col-md-10 col-md-offset-4" id="slider"></div>
+                </div>
+
+            </div>
+            </div>
+
+        <div class="section" id="section10">
+
+            <div class="content">
+                <h1>About this project</h1>
+                <p>The project is designed by <a href="https://www.linkedin.com/in/siddharth-chittora-aba555a4/">Siddharth Chittora</a></p>
+                <p>This was a final project for first data visualization course at CSUS.</p>
+                <p>Special thanks to our professor Anna Baynes.</p>
+                <p>There are multiple datasets used for this project and they can found here.</p>
+                </br>
+            </div>
+            </div>
+            </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+/*---------------------------------------*/
+div.tooltip1 {   
+            position: absolute;         
+            text-align: center;         
+            width: 60px;                    
+            height: 28px;                   
+            padding: 2px;               
+            font: 12px sans-serif;      
+            background: lightsteelblue; 
+            border: 0px;        
+            border-radius: 8px;         
+            pointer-events: none;           
+        }
+div.tooltip2 {   
+            position: absolute;         
+            text-align: center;         
+            width: 60px;                    
+            height: 50px;                   
+            padding: 2px;               
+            font: 12px sans-serif;      
+            background: lightsteelblue; 
+            border: 0px;        
+            border-radius: 8px;         
+            pointer-events: none; 
+}
+
+.line_tooltip {
+  fill: none;
+  stroke: #6F257F;
+  stroke-width: 5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #F1F3F3;
+  stroke: #6F257F;
+  stroke-width: 5px;
+}
+  
+.hover-line {
+  stroke: #6F257F;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
