@@ -3,7 +3,7 @@
 	// set the dimensions and margins of the graph
 		var margin = {top: 10, right: 30, bottom: 30, left: 60},
 		    margin2 = {top: 5, right: 30, bottom: 30, left: 60},
-		    width = 520 - margin.left - margin.right,
+		    width = 700 - margin.left - margin.right,
 		    height = 400 - margin.top - margin.bottom,
 		    height2 = 75 - margin2.top - margin.bottom;
 
